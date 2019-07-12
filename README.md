@@ -15,8 +15,22 @@ func totalWithTax() {
 
 }
 ```
+```
+func totalWithTax() {
+print(itemCost + (itemCost * nyTax))
+}
+
+totalWithTax()
+```
 
 Then, modify the function you implemented to have a return type of `Int`, and use an external name that looks more readable. Function calls should look something like "total cost of the item after tax"
+
+```
+func totalWithTaxCeiling() {
+print(ceil(itemCost + (itemCost * nyTax)))
+}
+totalWithTaxCeiling()
+```
 
 ## Question 2
 
@@ -32,6 +46,19 @@ if todaysTemperature <= 40 {
 } else {
     print("Weather is moderate.")
 }
+```
+```
+func todaysTemp(temp: Int) -> String {
+if temp <= 40 {
+return("It's cold out.")
+} else if temp >= 85 {
+return("It's really warm.")
+} else {
+return("Weather is moderate.")
+}
+}
+print(todaysTemp(temp: 50))
+
 ```
 
 
