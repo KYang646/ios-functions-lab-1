@@ -109,7 +109,17 @@ print(lastDigit(12345))
 ## Question 5
 
 Write a function that takes in any two positive integers and return the sum.
+```
+func sumFunc(a: Int, b: Int) -> Int {
+var daSum = 0
+daSum = a + b
+print(daSum)
+return daSum
+//    print(daSum)
+}
 
+sumFunc
+```
 
 ## Question 6
 
@@ -123,6 +133,28 @@ Write a function takes in any number grade and returns a corresponding letter gr
 | 70 - 79 | C |
 | 65 - 69 | D |
 | Below 65 | F |
+```
+func letterGrade(grade: Int) -> String {
+
+if grade < 65 {
+return("F")
+} else if grade < 70 {
+return("D")
+} else if grade < 80 {
+return("C")
+} else if grade < 90 {
+return("B")
+} else if grade < 100 {
+return("A")
+} else if grade == 100 {
+return("A+")
+}
+
+
+return("Invalid grade")
+}
+letterGrade(grade: 98)
+```
 
 
 ## Question 7
