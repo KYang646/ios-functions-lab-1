@@ -77,11 +77,9 @@ Output: `1`
 func min2(a: Int, b: Int) -> Int {
 if a > b {
 return(b)
-}
-if b > a {
+} else {
 return(a)
 }
-return(0)
 }
 print(min2(a:1, b: 2))
 
@@ -99,7 +97,14 @@ Example:
 Input: `lastDigit(12345)`
 
 Output: `5`
+```
+func lastDigit(_ number: Int) -> Int {
+let lastNumber = number % 10
+return lastNumber
+}
 
+print(lastDigit(12345))
+```
 
 ## Question 5
 
