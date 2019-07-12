@@ -73,6 +73,19 @@ Example:
 Input: `min2(a:1, b:2)`
 
 Output: `1`
+```
+func min2(a: Int, b: Int) -> Int {
+if a > b {
+return(b)
+}
+if b > a {
+return(a)
+}
+return(0)
+}
+print(min2(a:1, b: 2))
+
+```
 
 
 ## Question 4
